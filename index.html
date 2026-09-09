@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VANSH-KIRAN Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#fbf5eb;--paper:#f1e4d2;--wine:#6d4036;--deep:#402722;--gold:#c79550;--sage:#657542;--rose:#d88e99}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{font-family:"DM Sans",sans-serif;color:var(--wine);background:var(--ivory);overflow-x:hidden}body.lock{overflow:hidden}a{text-decoration:none;color:inherit}img{width:100%;display:block}
+.serif{font-family:"Cormorant Garamond",serif;font-weight:500}.kicker{font-size:9px;letter-spacing:5px;color:var(--gold)}.section{padding:105px 20px}.wrap{width:min(1060px,94%);margin:auto}.center{text-align:center}
+#intro{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:radial-gradient(circle,#fffdf8,#f6ecdd 65%,#e8d2b1);transition:1s}#intro.hide{opacity:0;visibility:hidden}
+.intro{width:min(90%,420px);text-align:center}.seal{width:155px;height:155px;margin:auto;border:1px solid var(--gold);outline:1px solid #d9b77d;outline-offset:8px;border-radius:50%;display:grid;place-items:center}.seal b{font:500 48px "Cormorant Garamond"}.seal small{display:block;font-size:8px;letter-spacing:4px;color:var(--gold);margin-top:-34px}.open{margin-top:48px;padding:14px 30px;border:1px solid var(--gold);border-radius:99px;background:transparent;color:var(--wine);font-size:10px;letter-spacing:2px;cursor:pointer}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;position:relative;background:linear-gradient(#fffaf1b8,#fffaf1e8),url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85") center/cover}.frame{position:absolute;inset:13px;border:1px solid #c7955080}.hero-content{z-index:1}.hero-kicker{font-size:10px;letter-spacing:7px}.names{font-size:clamp(78px,15vw,150px);line-height:.68;margin-top:28px}.names span{display:block;font-size:.4em;color:var(--gold);line-height:1.7;font-style:italic}.place{margin-top:42px;font-size:9px;letter-spacing:4px;line-height:2.1}.scroll{position:absolute;bottom:22px;font-size:8px;letter-spacing:3px}.scroll i{display:block;height:38px;width:1px;background:var(--gold);margin:9px auto}
+.count{background:var(--paper);text-align:center}.countgrid{display:grid;grid-template-columns:repeat(4,1fr);max-width:720px;margin:42px auto;border-top:1px solid #d7bc91;border-bottom:1px solid #d7bc91}.countbox{padding:24px 8px;border-right:1px solid #d7bc91}.countbox:last-child{border:0}.countbox b{font:500 50px "Cormorant Garamond";display:block}.countbox small{font-size:8px;letter-spacing:3px;color:var(--gold)}
+.mandap{height:700px;position:relative;background:url("https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1800&q=85") center/cover}.mandap:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,#3d282333)}.garland{position:absolute;z-index:1;top:45px;left:6%;right:6%;height:75px;border-bottom:6px solid var(--sage);text-align:center;color:var(--rose);font-size:38px;letter-spacing:14px}.arch{position:absolute;z-index:1;left:10%;right:10%;bottom:13%;height:45%;border:18px solid #81776c;border-bottom:0}.mandaptext{position:absolute;z-index:2;bottom:35px;left:0;right:0;text-align:center;color:white;text-shadow:0 2px 12px #4b3029}.mandaptext h2{font-size:46px}
+.story{background:#fffdf8}.storygrid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.storyimg{height:560px;border-radius:180px 180px 8px 8px;overflow:hidden}.storyimg img{height:100%;object-fit:cover}.story p{font-size:13px;line-height:2;margin-top:25px;color:#77584f}.sign{font:italic 32px "Cormorant Garamond";color:var(--gold);margin-top:30px}
+.couple{background:#f0e2d0}.couplegrid{display:grid;grid-template-columns:1fr 1fr;gap:25px;max-width:820px;margin:48px auto}.person{text-align:center}.personphoto{position:relative;overflow:hidden}.personphoto:before{content:"";position:absolute;inset:12px;border:1px solid #fff9;z-index:1}.personphoto img{aspect-ratio:4/5;object-fit:cover}.person h3{font:500 42px "Cormorant Garamond";margin-top:15px}.person p{font-size:8px;letter-spacing:4px;color:var(--gold)}
+.events{background:#fffdf8}.eventgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}.event{background:#fbf2e4;border:1px solid #dfc39a;padding:38px 22px;text-align:center;position:relative}.event:before{content:"";position:absolute;inset:8px;border:1px solid #ead8b8}.eventicon{font-size:28px}.event h3{font:500 38px "Cormorant Garamond";margin-top:12px}.date{font-size:9px;letter-spacing:2px;color:var(--gold);margin:9px}.event p{font-size:11px;line-height:1.8}
+.timeline{background:var(--paper)}.timelinebox{max-width:760px;margin:48px auto;position:relative}.timelinebox:before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:#d2b47e}.tl{width:50%;padding:0 35px 50px;position:relative}.tl:nth-child(even){margin-left:50%}.tl:nth-child(odd){text-align:right}.tl:after{content:"";position:absolute;top:3px;width:11px;height:11px;border:2px solid var(--gold);border-radius:50%;background:var(--paper)}.tl:nth-child(odd):after{right:-7px}.tl:nth-child(even):after{left:-7px}.tl time{font-size:9px;color:var(--gold);letter-spacing:2px}.tl h3{font:500 30px "Cormorant Garamond";margin:4px 0}.tl p{font-size:11px;line-height:1.7}
+.gallery{background:#eee0cc}.gallerygrid{columns:3 200px;column-gap:12px;margin-top:45px}.gallerygrid figure{break-inside:avoid;margin-bottom:12px;overflow:hidden}.gallerygrid img{transition:.6s;cursor:zoom-in}.gallerygrid img:hover{transform:scale(1.04)}
+.venue{background:#fffdf8;text-align:center}.venuecard{max-width:800px;margin:45px auto;padding:55px 20px;border:1px solid #d9bd8b;background:#fbf4e9}.venuecard h3{font:500 50px "Cormorant Garamond"}.venuecard p{font-size:12px;line-height:2;margin-top:10px}.btn{display:inline-block;margin-top:23px;border:1px solid var(--gold);padding:13px 25px;font-size:9px;letter-spacing:2px}
+.rsvp{background:linear-gradient(#43251dcc,#43251dcc),url("https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=85") center/cover;text-align:center;color:white}.rsvp h2{font-size:70px}.rsvp p{max-width:600px;margin:22px auto;line-height:2;font-size:12px}.wa{display:inline-block;background:#25d366;border-radius:99px;padding:15px 24px;font-size:10px;font-weight:600}
+footer{background:var(--deep);color:#f5e6d0;text-align:center;padding:65px 20px}footer h2{font-size:55px}footer p{font-size:8px;letter-spacing:4px;margin-top:10px;color:#d8bd96}
+.float{position:fixed;z-index:1000;bottom:18px;box-shadow:0 8px 25px #0003}.music{right:16px;width:52px;height:52px;border-radius:50%;background:#d69942;color:#fff;cursor:pointer}.music.play{animation:pulse 1.3s infinite}@keyframes pulse{50%{transform:scale(1.08)}}.floatingwa{left:16px;background:#25d366;color:#fff;padding:13px 18px;border-radius:99px;font-size:10px;font-weight:600}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:999}.petal{position:absolute;top:-20px;width:8px;height:12px;background:#e2a0aa;border-radius:100% 0;animation:fall linear forwards}@keyframes fall{to{transform:translate(var(--x),110vh) rotate(720deg);opacity:0}}
+.reveal{opacity:0;transform:translateY(30px);transition:.9s}.reveal.show{opacity:1;transform:none}
+@media(max-width:720px){.section{padding:85px 18px}.countgrid{grid-template-columns:1fr 1fr}.countbox:nth-child(2){border-right:0}.countbox:nth-child(-n+2){border-bottom:1px solid #d7bc91}.mandap{height:570px}.arch{border-width:11px}.storygrid{grid-template-columns:1fr;gap:40px}.storyimg{height:460px}.eventgrid{grid-template-columns:1fr}.timelinebox:before{left:8px}.tl,.tl:nth-child(even){width:100%;margin-left:0;text-align:left;padding-left:34px}.tl:nth-child(odd):after,.tl:nth-child(even):after{left:3px;right:auto}.gallerygrid{columns:2 140px}.rsvp h2{font-size:54px}}
+</style>
+</head>
+<body class="lock">
+
+<div id="intro"><div class="intro">
+  <div class="seal"><div><b> K & V</b>
+   <h4>WEEDING</h4></div></div>      
+
+  <div class="kicker" style="margin-top:48px">A CELEBRATION OF LOVE</div>
+  <button class="open" id="open">TAP TO OPEN</button>
+</div></div>
+<div id="petals"></div>
+<a class="float floatingwa" target="_blank" href="https://wa.me/916388427782?text=Hello%20%20Kiran-Vansh.">💬 WHATSAPP US</a>
+<button class="float music" id="music">♪</button>
+<audio id="audio" loop><source src="song.mpeg" type="audio/mpeg"></audio>
+
+<section class="hero"><div class="frame"></div><div class="hero-content reveal">
+  <div class="hero-kicker">THE WEDDING OF</div>
+ <div class="names serif">KIRAN <span>&</span> VANSH</div>
+  <div class="place">ROYAL VRINDAVAN LAWN<br>TELIBAGH,LUCKNOW </div>
+</div><div class="scroll">SCROLL TO EXPLORE<i></i></div></section>
+
+<section class="section count"><div class="wrap reveal"><div class="kicker">THE COUNTDOWN</div><h2 class="serif" style="font-size:72px">Until Forever</h2>
+<div class="countgrid"><div class="countbox"><b id="d">00</b><small>DAYS</small></div><div class="countbox"><b id="h">00</b><small>HOURS</small></div><div class="countbox"><b id="m">00</b><small>MINUTES</small></div><div class="countbox"><b id="s">00</b><small>SECONDS</small></div></div></div></section>
+
+<section class="mandap"><div class="garland">❀ ❀ ❀ ❀ ❀</div><div class="arch"></div><div class="mandaptext"><div class="kicker" style="color:#efd092">OUR SACRED DAY</div><h2 class="serif">Where two families become one</h2></div></section>
+
+<section class="section story"><div class="wrap storygrid"><div class="storyimg reveal"><img src="image/WhatsApp Image 2026-09-09 at 12.34.06 PM.jpeg" alt="Kiran Wedding"></div><div class="reveal"><div class="kicker">BEGINNING OF FOREVER</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">Our Story</h2><p>Some meetings are written in the stars. What began as a beautiful chapter has grown into a promise of a lifetime. With the blessings of our families, we invite you to celebrate every smile, every ritual and every moment of our wedding.</p><div class="sign">With love, #KIYANSH</div></div></div></section>
+
+<section class="section couple"><div class="wrap center reveal"><div class="kicker">TWO HEARTS · ONE JOURNEY</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">Meet the Couple</h2><div class="couplegrid">
+<div class="person"><div class="personphoto"><img src="image/KIRAN.jpeg"></div><h3>KIRAN</h3><p>THE BRIDE</p></div>
+<div class="person"><div class="personphoto"><img src="image/VA.jpeg"></div><h3>VANSH</h3><p>THE GROOM</p></div>
+</div></div></section>
+
+<section class="section events"><div class="wrap center reveal"><div class="kicker">JOIN THE CELEBRATION</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">Wedding Events</h2><div class="eventgrid">
+<article class="event"><div class="eventicon">🌼</div><h3>Haldi</h3><div class="date">12 FEBRUARY · 5:00 PM</div><p>A joyful morning of colour, laughter and blessings.</p></article>
+<article class="event"><div class="eventicon">🪷</div><h3>Mehendi</h3><div class="date">13 FEBRUARY · 5:00 PM</div><p>An evening of mehendi, music, dance and memories.</p></article>
+<article class="event"><div class="eventicon">💍</div><h3>Wedding</h3><div class="date">14 FEBRUARY</div><p>Join us for the sacred vows and the beginning of forever.</p></article>
+</div></div></section>
+
+<section class="section timeline"><div class="wrap center reveal"><div class="kicker">THE CELEBRATIONS</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">A Day to Remember</h2><div class="timelinebox">
+<div class="tl"><time>5:00 PM</time><h3>Haldi</h3><p>Family, flowers and a little sunshine.</p></div>
+<div class="tl"><time>5:00 PM</time><h3>Mehendi</h3><p>Beautiful patterns, music and happy hearts.</p></div>
+<div class="tl"><time>8:00 PM</time><h3>Wedding Ceremony</h3><p>The sacred pheras and seven promises.</p></div>
+</div></div></section>
+
+<section class="section gallery"><div class="wrap center reveal"><div class="kicker">MEMORIES</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">Captured Moments</h2><div class="gallerygrid">
+<figure><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85"></figure>
+<figure><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"></figure>
+<figure><img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=900&q=85"></figure>
+<figure><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85"></figure>
+<figure><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=85"></figure>
+<figure><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85"></figure>
+</div></div></section>
+
+<section class="section venue"><div class="wrap reveal"><div class="kicker">THE VENUE</div><h2 class="serif" style="font-size:72px;line-height:.9;margin-top:14px">Where We Celebrate</h2><div class="venuecard"><h3>ROYAL VRINDAVAN LAWN</h3><p>TELIBAGH<br>LUCKNOW, India</p><a class="btn" target="_blank" href="https://maps.app.goo.gl/gvS1m8qBVmtuj2Da9?g_st=aw">VIEW ON GOOGLE MAPS</a></div></div></section>
+
+<section class="section rsvp"><div class="wrap reveal"><div class="kicker">WE WOULD LOVE TO HAVE YOU</div><h2 class="serif">Save the Date</h2><p>Your presence is the most precious gift. Come celebrate love, laughter, family and the beginning of our forever.</p><a class="wa" target="_blank" href="https://wa.me/916388427782?text=Hello%20%20Kiran-Vansh.">💬 CONTACT US  ON WHATSAPP</a></div></section>
+
+<footer><h2 class="serif">K & V</h2><p>MADE WITH LOVE · KIRAN & VANSH</p><p>2026</p></footer>
+
+<script>
+const intro=document.getElementById("intro"),audio=document.getElementById("audio"),music=document.getElementById("music");
+function makePetals(n=28){for(let i=0;i<n;i++){let p=document.createElement("i");p.className="petal";p.style.left=Math.random()*100+"vw";p.style.animationDuration=5+Math.random()*7+"s";p.style.animationDelay=Math.random()*2+"s";p.style.setProperty("--x",Math.random()*180-90+"px");document.getElementById("petals").appendChild(p);setTimeout(()=>p.remove(),15000)}}
+document.getElementById("open").onclick=async()=>{intro.classList.add("hide");document.body.classList.remove("lock");makePetals();try{await audio.play();music.classList.add("play");music.textContent="♫"}catch(e){}};
+music.onclick=async()=>{if(audio.paused){try{await audio.play();music.classList.add("play");music.textContent="♫"}catch(e){}}else{audio.pause();music.classList.remove("play");music.textContent="♪"}};
+
+/* CHANGE THE WEDDING DATE HERE */
+
+const target = new Date("2027-02-14T19:00:00+05:30").getTime();
+
+
+function tick() {
+
+    let x = Math.max(
+        0,
+        target - Date.now()
+    );
+
+
+    d.textContent =
+        String(
+            Math.floor(x / 864e5)
+        ).padStart(2, "0");
+
+
+    h.textContent =
+        String(
+            Math.floor(x % 864e5 / 36e5)
+        ).padStart(2, "0");
+
+
+    m.textContent =
+        String(
+            Math.floor(x % 36e5 / 6e4)
+        ).padStart(2, "0");
+
+
+    s.textContent =
+        String(
+            Math.floor(x % 6e4 / 1e3)
+        ).padStart(2, "0");
+}
+
+
+tick();
+
+setInterval(
+    tick,
+    1000
+);
+
+
+/* ========================= */
+/* SCROLL ANIMATION */
+/* ========================= */
+
+const obs = new IntersectionObserver(
+
+    es => es.forEach(
+
+        e =>
+            e.isIntersecting &&
+            e.target.classList.add("show")
+
+    ),
+
+    {
+        threshold: .12
+    }
+
+);
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(
+        x => obs.observe(x)
+    );
+
+
+/* ========================= */
+/* GALLERY IMAGE FULLSCREEN */
+/* ========================= */
+
+document
+    .querySelectorAll(".gallerygrid img")
+    .forEach(
+
+        img => img.onclick = () => {
+
+            let b = document.createElement("div");
+
+
+            b.style.cssText =
+                "position:fixed;" +
+                "inset:0;" +
+                "z-index:10000;" +
+                "background:#000e;" +
+                "display:grid;" +
+                "place-items:center;" +
+                "padding:20px;" +
+                "cursor:zoom-out";
+
+
+            let i = document.createElement("img");
+
+
+            i.src = img.src;
+
+
+            i.style.cssText =
+                "max-width:95%;" +
+                "max-height:92vh;" +
+                "width:auto";
+
+
+            b.append(i);
+
+
+            document.body.append(b);
+
+
+            b.onclick = () => b.remove();
+
+        }
+
+    );
+    </script>
+</body>
+</html>
